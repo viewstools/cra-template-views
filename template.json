@@ -1,0 +1,32 @@
+{
+  "package": {
+    "dependencies": {
+      "@viewstools/create-react-app": "^23.0.0"
+    },
+    "scripts": {
+      "build": "views-morph src --as react-dom && react-app-rewired build",
+      "test": "react-app-rewired test",
+      "eject": "react-scripts eject",
+      "start": "concurrently --kill-others npm:start:*",
+      "start:react": "LOCAL_IP=`node -e \"process.stdout.write(require('internal-ip').v4.sync())\"` react-app-rewired start",
+      "start:views": "REACT_APP_VIEWS_TOOLS=true views-morph src --watch --as react-dom",
+      "views:clean": "views-morph src --clean"
+    },
+    "browserslist": {
+      "production": [">0.2%", "not dead", "not op_mini all", "ios > 9"],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    },
+    "husky": {
+      "hooks": {
+        "pre-commit": "lint-staged"
+      }
+    },
+    "lint-staged": {
+      "*.{js,json,css,md}": ["prettier --write", "git add"]
+    }
+  }
+}

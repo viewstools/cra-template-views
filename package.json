@@ -1,0 +1,28 @@
+{
+  "name": "cra-template-views",
+  "version": "23.0.0",
+  "main": "template.json",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "template",
+    "views",
+    "tools"
+  ],
+  "description": "The Views template for Create React App.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/viewstools/cra-template-views.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "bugs": {
+    "url": "https://github.com/viewstools/cra-template-views/issues"
+  },
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
