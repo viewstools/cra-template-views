@@ -1,7 +1,7 @@
 {
   "package": {
     "dependencies": {
-      "@viewstools/create-react-app": "^23.0.0"
+      "@viewstools/create-react-app": "^24.0.0"
     },
     "scripts": {
       "build": "views-morph src --as react-dom && react-app-rewired build",
