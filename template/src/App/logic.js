@@ -1,4 +1,4 @@
-import ViewsFlow from 'Views/Flow.js'
+import { ViewsFlow } from 'Views/Flow.js'
 import View from './view.js'
 import React from 'react'
 
