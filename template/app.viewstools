@@ -42,5 +42,10 @@
       "readyCheck": "Done",
       "dependsOn": ["start:react"]
     }
-  ]
+  ],
+  "morpherVersion": {
+    "major": 24,
+    "minor": 9,
+    "patch": 1
+  }
 }

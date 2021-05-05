@@ -1,15 +1,15 @@
 {
   "package": {
     "dependencies": {
-      "@viewstools/create-react-app": "^23.0.0"
+      "@viewstools/create-react-app": "^24.1.0"
     },
     "scripts": {
       "build": "views-morph src --as react-dom && react-app-rewired build",
       "test": "react-app-rewired test",
       "eject": "react-scripts eject",
       "start": "concurrently --kill-others npm:start:*",
-      "start:react": "LOCAL_IP=`node -e \"process.stdout.write(require('internal-ip').v4.sync())\"` react-app-rewired start",
-      "start:views": "REACT_APP_VIEWS_TOOLS=true views-morph src --watch --as react-dom",
+      "start:react": "react-app-rewired start",
+      "start:views": "views-morph src --watch --as react-dom",
       "views:clean": "views-morph src --clean"
     },
     "browserslist": {
